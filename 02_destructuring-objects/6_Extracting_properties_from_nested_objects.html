@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extracting properties from nested objects</title>
+  </head>
+  <body>
+    <h1>Extracting properties from nested objects</h1>
+
+    <script>
+      const hero = {
+        name: "Ashin",
+        realName: "Indavudha",
+        address: {
+          city: "Manadalay",
+        },
+      };
+
+      //console.log(hero.address.city);
+      //object destructuring
+      const {
+        address: { city },
+      } = hero;
+      console.log(city);
+      //console.log(hero);
+    </script>
+  </body>
+</html>

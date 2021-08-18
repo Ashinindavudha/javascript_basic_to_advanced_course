@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Object</title>
+  </head>
+  <body>
+    <h1>Javascript Object</h1>
+    <p id="demo"></p>
+
+    <script>
+      //create an object
+      const perosn = {
+        firstName: "ashin",
+        lastName: "indavudha",
+        age: 34,
+        eyeColor: "black",
+      };
+
+      document.getElementById("demo").innerHTML =
+        perosn["firstName"] + "  " + perosn["lastName"];
+    </script>
+  </body>
+</html>

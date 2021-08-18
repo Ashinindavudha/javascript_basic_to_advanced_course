@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Own properties</title>
+  </head>
+  <body>
+    <h1>Own properties</h1>
+    <script>
+      const person = {
+        name: "Ashin",
+        surname: "Indavudha",
+      };
+      const personB = Object.create(person, {
+        profession: {
+          value: "Astronaut",
+          enumerable: true,
+        },
+      });
+      console.log(personB.hasOwnProperty("profession")); // true
+      console.log(personB.hasOwnProperty("name")); // false
+      console.log(personB.hasOwnProperty("surname")); // false
+
+      const clone = {
+        ...personB,
+      };
+      console.log(clone); // => {profession: 'Astronuat'}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p id="demo"></p><br>
+	<button onclick="CheckScope()">Click local variable</button>
+
+	<script>
+		var myVar = "global variable";
+
+		function CheckScope() {
+			var myVar = "local variable";
+			document.write(myVar);
+		}
+		document.getElementById('demo').innerHTML = myVar;
+	</script>
+</body>
+</html>
