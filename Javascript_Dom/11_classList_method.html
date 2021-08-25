@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Dom</title>
+  </head>
+  <body>
+    <h1>Javascript Dom</h1>
+
+    <div>
+      <span title="hello" id="hi" class="hi1 hi2">Hello</span>
+      <span id="bye">Good Morning</span>
+    </div>
+    <script>
+      const body = document.body;
+      const div = document.querySelector("div");
+      const spanHi = document.querySelector("#hi");
+      const spanBye = document.querySelector("#bye");
+      spanHi.classList.add("new");
+      //spanHi.classList.remove("hi1");
+      //toggle is remove class name
+      spanHi.classList.toggle("hi3");
+    </script>
+  </body>
+</html>

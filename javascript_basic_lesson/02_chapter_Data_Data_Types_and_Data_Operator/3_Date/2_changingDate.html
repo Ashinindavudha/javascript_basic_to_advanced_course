@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changing a date</title>
+  </head>
+  <body>
+    <h1>Changing a date</h1>
+    <script>
+      //ask the user to enter date string
+      var orignalDate = prompt(
+        "enter a date (month name, date, year)",
+        "31 Dec 2021"
+      );
+      //overwrite the originalDate variable with a new Date object
+      var originalDate = new Date(orignalDate);
+      //ask the user to enter the number of days to be added, and convert to number
+      var addDays = Number(prompt("Enter number of days to be added", "1"));
+      //set a new value for originalDate of originalDate plus the days to be added
+      originalDate.setDate(originalDate.getDate() + addDays);
+      //write out the date held by the originalDate object using the toString() method
+      document.write(originalDate.toString());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Object.create() Method</title>
+  </head>
+  <body>
+    <h1>JavaScript Object.create() Method</h1>
+    <p>
+      The Object.create() method is used to create a new object with the
+      specified prototype object and properties. We can create an object without
+      a prototype by Object.creates (null).
+    </p>
+    <h1>Parameter</h1>
+    <ul>
+      <li>
+        <strong>prototype :</strong> It is the prototype object from which a new
+        object has to be created.
+      </li>
+      <li>
+        <strong>properties Object :</strong> It is an optional parameter. It
+        specifies the enumerable properties to be added to the newly created
+        object.
+      </li>
+    </ul>
+    <h1>Return</h1>
+    <p>
+      Object.create() returns a new object with the specified prototype object
+      and properties.
+    </p>
+    <script>
+      const people = {
+        printIntroduction: function () {
+          console.log(`My name is ${this.name}. Am i human? ${this.isHuman}`);
+        },
+      };
+      const me = Object.create(people);
+      me.name = "Ashinindavudha"; // name is a property set on "me", but not on "person"
+      me.isHuman = true; // inherted properties can be overwrite
+      me.printIntroduction();
+    </script>
+  </body>
+</html>

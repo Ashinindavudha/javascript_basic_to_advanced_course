@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>javascript variable</title>
-  </head>
-  <body>
-    <p id="example"></p>
-    <script>
-      let word1 = "ashin";
-      let word2 = "indavudha";
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<script>
+		var name;
+		name = "Ashinindavudha";
+		var age;
+		age = 24;
 
-      let num1 = 1;
-      let num2 = 4;
-
-      //const fullName = `${num1 + num2} ${word2}`;
-      let example = `${word1} ${word2}`;
-
-      //console.log(fullName);
-      console.log(example);
-
-      document.getElementById("example").innerText = example;
-    </script>
-  </body>
+		document.getElementById('demo').innerHTML= name + age
+	</script>
+</body>
 </html>

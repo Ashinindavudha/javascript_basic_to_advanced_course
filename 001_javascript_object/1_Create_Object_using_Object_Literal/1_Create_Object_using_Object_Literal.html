@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1_Create_Object_using_Object_Literal</title>
+  </head>
+  <body>
+    <h1>1_Create_Object_using_Object_Literal</h1>
+
+    <script>
+      var emptyObject = {}; // object with no properties or method
+      var person = { firstName: "ashin" }; // object with single property
+      // object with single method
+      var message = {
+        showMessage: function (val) {
+          alert(val);
+        },
+      };
+      //message.showMessage();
+
+      //object with properties & method
+      var Person = {
+        firstName: "ashin",
+        lastName: "indavudha",
+        age: 30,
+        getFullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+      document.write(Person.getFullName());
+    </script>
+  </body>
+</html>

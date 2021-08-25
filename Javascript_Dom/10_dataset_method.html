@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Dom</title>
+  </head>
+  <body>
+    <h1>Javascript Dom</h1>
+
+    <div>
+      <span
+        title="hello"
+        id="hi"
+        data-test="this data set test"
+        data-longer-name="Myokhing"
+        >Hello</span
+      >
+      <span id="bye">Good Morning</span>
+    </div>
+    <script>
+      const body = document.body;
+      const div = document.querySelector("div");
+      const spanHi = document.querySelector("#hi");
+      const spanBye = document.querySelector("#bye");
+
+      console.log(spanHi.dataset);
+      console.log(spanHi.dataset.test);
+      console.log(spanHi.dataset.longerName);
+      spanHi.dataset.newName = "Ashinindavudha";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example: Applying different CSS according to screen size</title>
+  </head>
+  <body>
+    <h1>Example: Applying different CSS according to screen size</h1>
+
+    <script>
+      //define a variable called cssName and message called resolutionInfo
+      var cssName;
+      var resolutionInfo;
+      //if the width of the screen is less than 650px
+      if (screen.availWidth < 650) {
+        //define the style Variable as the low-resolution styles
+        cssName = "css/lowres.css";
+        resolutionInfo = "low resolutions";
+        // or if the width of the screen is less than 1000px
+      } else {
+        if (screen.availWidth > 1000) {
+          //define the style variable as the high resolution styles
+          cssName = "css/highres.css";
+          resolutionInfo = "high resolution";
+          //otherwise
+        } else {
+          //define the style variable as the mid-resolution styles
+          cssName = "css/lowres.css";
+          resolutionInfo = "medium resolution";
+        }
+        document.write(
+          '<link rel="StyleSheet" type="" href="' +
+            cssName +
+            '" type="text/css" />'
+        );
+        document.write("<br>");
+        document.write("<p>Applied Style" + resolutionInfo + "</p>");
+      }
+    </script>
+  </body>
+</html>

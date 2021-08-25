@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Object Passes by Reference</title>
+  </head>
+  <body>
+    <h1>JS Object Passes by Reference</h1>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+      function changeFirstName(per) {
+        per.firstName = "ashin";
+      }
+      var person = { firstName: "Indavudha" };
+      document.getElementById("demo").textContent = person.firstName;
+      changeFirstName(person);
+      document.getElementById("demo1").textContent = person.firstName;
+    </script>
+  </body>
+</html>

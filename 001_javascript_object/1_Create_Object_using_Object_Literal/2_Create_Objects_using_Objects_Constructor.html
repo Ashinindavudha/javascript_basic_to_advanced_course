@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Objects using Objects() Constructor</title>
+  </head>
+  <body>
+    <h1>Create Objects using Objects() Constructor</h1>
+    <p>
+      Another way of creating objects is using the Object() constructor function
+      using the <i style="color: red">new</i> keyword. Properties and methods
+      can be declared using the dot notation .property-name or using the square
+      brackets ["property-name"], as shown below.
+    </p>
+    <p id="person1"></p>
+    <p id="person2"></p>
+    <p id="person3"></p>
+    <p id="person4"></p>
+    <p id="person5"></p>
+
+    <script>
+      var person = new Object();
+      //Attach properties and method to person
+      person.name = "ashin";
+      person["lastName"] = "indavudha";
+      person.age = 25;
+      person.getFullName = function () {
+        return this.name + " " + this.lastName;
+      };
+      //access properties & methods
+      document.getElementById("person1").innerHTML = person.name;
+      document.getElementById("person2").innerHTML = person.lastName;
+      document.getElementById("person3").innerHTML = person["name"];
+      document.getElementById("person4").innerHTML = person["lastName"];
+      document.getElementById("person5").innerHTML = person.getFullName();
+    </script>
+  </body>
+</html>

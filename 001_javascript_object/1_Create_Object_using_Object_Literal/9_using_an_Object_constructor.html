@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>using an Object constructor</title>
+  </head>
+  <body>
+    <h1>using an Object constructor</h1>
+    <p>
+      Here, you need to create function with arguments. Each argument value can
+      be assigned in the current object by using
+      <i
+        ><strong><u style="color: red">this</u></strong></i
+      >
+      keyword.
+    </p>
+    <p>
+      The
+      <i
+        ><strong><u style="color: red">this keyword</u></strong></i
+      >
+      refers to the current object.
+    </p>
+
+    <script>
+      function ObjectConstructor(id, name, salary) {
+        // arguments => id, name, salary
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+      }
+      newObjectConstructor = new ObjectConstructor(
+        102,
+        "Ashinindavudha",
+        50000
+      );
+      document.write(
+        newObjectConstructor.id,
+        +" " + newObjectConstructor.name + " " + newObjectConstructor.salary
+      );
+    </script>
+  </body>
+</html>

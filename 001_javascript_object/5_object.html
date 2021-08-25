@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Object</title>
+  </head>
+  <body>
+    <h1>Javascript Object</h1>
+
+    <script>
+      //arrays, function and object
+      //objects - key/ value pairs methods
+      //dot notation
+      const person = {
+        name: "ashin",
+        lastName: "indavudha",
+        age: 30,
+        education: false,
+        married: true,
+        siblings: ["anna", "susan", "perter"],
+        greeting: function () {
+          console.log("Say Hello");
+        },
+      };
+
+      const age = person.age;
+      console.log(age);
+      person.name = "Myokhing";
+      console.log(person.name);
+      console.log(person.siblings[2]);
+      person.greeting();
+    </script>
+  </body>
+</html>

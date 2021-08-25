@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example: Using parseFloat and parseInt</title>
+  </head>
+  <body>
+    <h1>Example: Using parseFloat and parseInt</h1>
+    <script>
+      var userEnteredNumber = prompt("please enter a number", "");
+      document.write(typeof userEnteredNumber + "<br>");
+      document.write(parseFloat(userEnteredNumber) + "<br>");
+      document.write(parseInt(userEnteredNumber) + "<br>");
+      userEnteredNumber = Number(userEnteredNumber);
+      document.write("<br>");
+      document.write(userEnteredNumber);
+      document.write("<br>");
+      document.write(typeof userEnteredNumber);
+    </script>
+  </body>
+</html>

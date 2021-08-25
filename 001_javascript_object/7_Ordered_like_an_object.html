@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordered like an object</title>
+  </head>
+  <body>
+    <h1>Ordered like an object</h1>
+    <script>
+      let codes = {
+        46: "Germany",
+        41: "Myanmar",
+        45: "London",
+        1: "USA",
+      };
+      for (let code in codes) {
+        //alert(code);
+        document.write(code);
+        console.log(code);
+      }
+
+      let user = {
+        name: "ashin",
+        surname: "indavudha",
+      };
+      user.age = 30; // add one more
+
+      // non-integer properties are listed in the creation order
+      for (let prop in user) {
+        document.write(prop);
+      }
+      /* So, to fix the issue with the phone codes, we can “cheat” by making the codes non-integer. Adding a plus "+" sign before each code is enough. */
+      let coders = {
+        "+46": "Germany",
+        "+41": "Myanmar",
+        "+45": "London",
+        "+1": "USA",
+      };
+      for (let props in coders) {
+        //alert(code);
+        document.write(props);
+        console.log(props);
+      }
+    </script>
+  </body>
+</html>

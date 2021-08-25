@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Replacing String Content</title>
+  </head>
+  <body>
+    <h1>Replacing String Content</h1>
+    <p>
+      The <strong>replace() method</strong> replaces a specified value with
+      another value in a string:
+    </p>
+    <button onclick="displayFunction()">Click Here</button>
+    <p id="demo">Please Visit Microsoft</p>
+
+    <script>
+      function displayFunction() {
+        let text = document.getElementById("demo").innerHTML;
+        document.getElementById("demo").innerHTML = text.replace(
+          "Microsoft",
+          "W3Schools"
+        );
+      }
+    </script>
+  </body>
+</html>

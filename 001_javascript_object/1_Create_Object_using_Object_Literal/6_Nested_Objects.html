@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Objects</title>
+  </head>
+  <body>
+    <h1>Nested Objects</h1>
+    <p>
+      An object can be a property of another object. It is called a nested
+      object.
+    </p>
+    <p id="demo"></p>
+    <script>
+      var person = {
+        firstName: "ashin",
+        lastName: "Indavudha",
+        age: 25,
+        address: {
+          id: 1,
+          country: "Myanmar",
+        },
+      };
+      document.getElementById("demo").textContent = person.address.country;
+    </script>
+  </body>
+</html>
