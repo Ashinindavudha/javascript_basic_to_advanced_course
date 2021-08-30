@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example: A simple banner display</title>
+  </head>
+  <body>
+    <h1>Example: A simple banner display</h1>
+    <script>
+      var bannerImages = new Array();
+      bannerImages[0] = "img/1.jpg";
+      bannerImages[2] = "img/2.jpg";
+      bannerImages[3] = "img/3.jpg";
+      bannerImages[4] = "img/4.jpg";
+      bannerImages[5] = "img/5.jpg";
+      bannerImages[6] = "img/6.jpg";
+      bannerImages[7] = "img/7.jpg";
+      bannerImages[8] = "img/8.jpg";
+      var randomImageIndex = Math.round(Math.random() * 6);
+
+      document.write(
+        '<img alt="" src="' + bannerImages[randomImageIndex] + '" >'
+      );
+    </script>
+  </body>
+</html>

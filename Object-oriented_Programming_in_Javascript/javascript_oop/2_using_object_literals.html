@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Literals</title>
+  </head>
+  <body>
+    <h1>Object Literals || OOP Lesson</h1>
+
+    <script>
+      //2. Object Literals
+      //let Book = {};
+      let Book = {
+        //define the property and value
+        //key: value pairs
+        title: "The Healing Power of Breath",
+        author: ["Richard P. Brown", "Patricia L. Berbar"],
+        price: 12.69,
+        description:
+          "Breating techniques to improve health and mental well-being.",
+        //multi-word property names
+        "publiation date": "August 27, 2021",
+        //method
+        getInfo: function () {
+          return (
+            this.title +
+            " - " +
+            "$" +
+            this.price +
+            " US Dollars" +
+            " Written by " +
+            this.author
+          );
+        }, // trailing or hanging comma
+      };
+      document.write(Book.getInfo() + "<br>");
+      document.write(Book["publiation date"]);
+    </script>
+  </body>
+</html>

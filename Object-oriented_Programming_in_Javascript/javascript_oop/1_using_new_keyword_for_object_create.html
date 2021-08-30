@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1_using_new_keyword_for_object_create</title>
+  </head>
+  <body>
+    <h1>javascript OOP Lesson</h1>
+    <h1>1_using_new_keyword_for_object_create</h1>
+    <h1>javascript <strong style="color: red">new keyword</strong> for oop</h1>
+    <script>
+      // 1. javascript keyword new
+      let Book = new Object();
+      //console.log(typeof Book);
+      //add object property and value
+      //sytaxn -> Book.property = "value"
+      Book.title = "The Healing Power of Breath";
+      Book.price = 15.66;
+      Book.author = "Ashin";
+      //console.log(Book);
+      //create method
+      Book.getInfo = function () {
+        return (
+          this.title +
+          " - " +
+          "$" +
+          this.price +
+          " US Dollars" +
+          " Written by " +
+          this.author
+        );
+      };
+      document.write(Book.getInfo());
+      //console.log(Book.getInfo());
+    </script>
+  </body>
+</html>

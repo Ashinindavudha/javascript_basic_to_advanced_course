@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example: Concatenating Arrays</title>
+  </head>
+  <body>
+    <h1>Example: Concatenating Arrays</h1>
+    <script>
+      var arrayOne = new Array("one", "two", "three", "four", "five");
+      var arrayTwo = new Array("ABC", "DEF", "GHI");
+      var arrayThree = new Array(
+        "Ashinindavudha",
+        "MyintLwan",
+        "AungYeHtat",
+        "ThineAung"
+      );
+      var joinedArray = arrayOne.concat(arrayTwo, arrayThree);
+      document.write("joinedArray has " + joinedArray.length + "elements<br>");
+      document.write(joinedArray[0] + "<br>");
+      document.write(joinedArray[11] + "<br>");
+    </script>
+  </body>
+</html>

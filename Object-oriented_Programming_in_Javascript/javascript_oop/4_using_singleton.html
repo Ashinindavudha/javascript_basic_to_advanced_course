@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Singleton in js OOP</title>
+  </head>
+  <body>
+    <h1>Singleton in js OOP</h1>
+
+    <script>
+      //4. singletom
+      let Book = new (function () {
+        // new instantiates the object
+        this.title = "Womb Awakening";
+        this.price = 14.23;
+        this.author = "Ashin";
+        this.getInfo = function () {
+          return (
+            this.title +
+            " - " +
+            "$" +
+            this.price +
+            " US Dollars" +
+            " Written by " +
+            this.author
+          );
+        };
+      })();
+      //console.log(Book.title);
+      document.write(Book.getInfo());
+    </script>
+  </body>
+</html>

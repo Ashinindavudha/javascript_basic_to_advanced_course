@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>using function in js object || OOP</title>
+  </head>
+  <body>
+    <h1>using function in js object || OOP</h1>
+
+    <script>
+      // 3. using function
+
+      function Book(title, price, author, description) {
+        // constructor fucntion (we build object's property and methods)
+        // properties
+        /*this.title = title;
+        this.author = ["Azra Bertrand", "Seren Bertrand"];
+        this.description =
+          "Rediscover the lost ancient mystery teachings of the Cosmic Womb";
+        this.price = 12.36;
+*/
+        this.title = title;
+        this.author = author;
+        this.description = description;
+        this.price = price;
+        // method (external function)
+        //this.getBookInfo;
+
+        //internal fucntion
+        this.getInfo = function () {
+          // recreated everytime you instantiate this object
+          return (
+            this.title +
+            " - " +
+            "$" +
+            this.price +
+            " US Dollars" +
+            " Written by " +
+            this.author
+          );
+        };
+      }
+      //using a function outside of the Book Object
+      function getBookInfo() {
+        return (
+          this.title +
+          " - " +
+          "$" +
+          this.price +
+          " US Dollars" +
+          " Written by " +
+          this.author
+        );
+      }
+      //console.log(getBookInfo());
+
+      Book.prototype.getInfo = function () {
+        return (
+          this.title +
+          " - " +
+          "$" +
+          this.price +
+          " US Dollars" +
+          " Written by " +
+          this.author
+        );
+      };
+    </script>
+  </body>
+</html>

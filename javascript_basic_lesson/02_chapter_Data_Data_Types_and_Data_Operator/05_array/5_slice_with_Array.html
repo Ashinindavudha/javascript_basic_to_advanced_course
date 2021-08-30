@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example: Using slice with Arrays</title>
+  </head>
+  <body>
+    <h1>Example: Using slice with Arrays</h1>
+    <script>
+      //create and initalize the array
+      var fullArray = new Array("one", "two", "three", "four", "five");
+      //slice from element 1 to element 4 and store in new variable sliceOfArray
+      var sliceOfArray = fullArray.slice(1, 4);
+      //write out new (zero-base) array of 3 elements
+      document.write(sliceOfArray[0] + "<br>");
+      document.write(sliceOfArray[1] + "<br>");
+      document.write(sliceOfArray[2] + "<br>");
+    </script>
+  </body>
+</html>
